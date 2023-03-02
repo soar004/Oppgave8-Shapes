@@ -50,8 +50,12 @@ public class Rectangle extends Shape{
     @Override
     public String toString() {
         return
-                "Rectangle[color =" + this.getColor() +
-                        "filled =" + this.isFilled() + ";]" + "Height =" + this.getHeight() + "Width =" +this.getWidth() + "area = " + this.getArea() + "perimeter =" + this.getPerimeter() + "id =" + this.getId() ;
+                "Rectangle: Color: " + this.getColor() +
+                        " Filled: " + this.isFilled() +
+                        "  Width: " + this.getWidth() + " Height: " +
+                        this.getHeight() + " Area: " + this.getArea() +
+                        " Perimeter: " + this.getPerimeter() + " Id: " +
+                        this.getId();
     }
 
 }
