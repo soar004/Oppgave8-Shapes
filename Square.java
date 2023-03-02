@@ -21,11 +21,9 @@ public class Square extends Rectangle
 
         return this.width;
     }
-
     public double getHeight() {
         return this.height;
     }
-
     //# Setter-metoder
     public void setHeight(double value) {
         this.height = value;
@@ -36,13 +34,12 @@ public class Square extends Rectangle
     }
     
     //# Metoder
-    // Regn ut areal
+    // Areal
     public double getArea() {
 
         return width*height;
     }
-
-    // Regn ut omkrets
+    // Omkrets
     public double getPerimeter() {
 
         return (width*2)*(height*2);

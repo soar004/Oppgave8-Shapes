@@ -5,21 +5,18 @@ public abstract class Shape {
 
     private static int id  = 0;
 
-
     //# Konstruktører
     public Shape() {
         this("red", true);
-        id++;
+
     }
 
     public Shape(String color, boolean filled) {
         this.setColor(color);
         this.setFilled(filled);
-
+        id++;
 
     }
-
-
 
     //# Getter-metoder
     public String getColor() {
@@ -44,7 +41,7 @@ public abstract class Shape {
     }
 
     public static void setId(int id) {
-        Shape.id = id;
+
     }
 
     //# Metoder

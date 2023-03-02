@@ -36,18 +36,17 @@ public class Rectangle extends Shape{
 
     //Metode
 
-    @Override
+    //Areal
     public double getArea() {
 
         return width*height;
     }
-
-    @Override
+    //Omkrets
     public double getPerimeter() {
 
         return (width*2)*(height*2);
     }
-    @Override
+   @Override
     public String toString() {
         return
                 "Rectangle: Color: " + this.getColor() +

@@ -2,6 +2,7 @@ public class Circle extends Shape
 {
     //# Felter
     private double radius;
+    private static int id= 0;
 
     //# Konstruktører
     public Circle() {
@@ -37,7 +38,8 @@ public class Circle extends Shape
     public double getArea() {
 
         double pi = Math.PI;
-        return pi*Math.pow(radius,2);
+        double area = pi*Math.pow(radius,2);
+        return Math.round(area);
     }
 
     // Regn ut omkrets
@@ -48,8 +50,11 @@ public class Circle extends Shape
     @Override
     public String toString() {
         return
-                "Circle[ color = " + this.getColor() +
-                        " filled = " + this.isFilled()+ " radius = " + this.getRadius() + " perimeter = " + this.getPerimeter() + " id = " + this.getId();
+                "Circle: Color: " + this.getColor() +
+                        " Filled: " + this.isFilled() +
+                        " Radius: " + this.getRadius() + " Area: " + this.getArea() +
+                        " Perimeter: " + this.getPerimeter() + " Id: " +
+                        this.getId();
     }
 
 }
