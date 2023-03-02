@@ -18,17 +18,27 @@ public class Square extends Rectangle
     
     //# Getter-metoder
     public double getWidth() {
+
         return this.width;
+    }
+
+    public double getHeight() {
+        return this.height;
     }
 
     //# Setter-metoder
     public void setHeight(double value) {
         this.height = value;
     }
+
+    public void setWidth(double value) {
+        this.width = value;
+    }
     
     //# Metoder
     // Regn ut areal
     public double getArea() {
+
         return width*height;
     }
 
@@ -41,8 +51,12 @@ public class Square extends Rectangle
     @Override
     public String toString() {
             return
-                    "Square[color =" + this.getColor() +
-                    "filled =" + this.isFilled() + ";]" + "Height =" + this.getHeight() + "Width =" +this.getWidth() + "area = " + this.getArea() + "width =" + this.getWidth() ;
+                    "Square: Color: " + this.getColor() +
+                            " Filled: " + this.isFilled() +
+                            "  Width: " + this.getWidth() + " Height: " +
+                             this.getHeight() + " Area: " + this.getArea() +
+                             " Perimeter: " + this.getPerimeter() + " Id: " +
+                             this.getId();
         }
 
     }

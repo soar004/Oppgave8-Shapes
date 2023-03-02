@@ -6,6 +6,7 @@ public class Rectangle extends Shape{
     //Konstruktør
 
     public Rectangle() {
+
         this(2.0, 3.0);
     }
 
