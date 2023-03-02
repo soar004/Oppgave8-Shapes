@@ -3,12 +3,13 @@ public abstract class Shape {
     private String color;
     private boolean filled;
 
-    private static int id;
+    private static int id  = 0;
 
 
     //# Konstruktører
     public Shape() {
         this("red", true);
+        id++;
     }
 
     public Shape(String color, boolean filled) {
