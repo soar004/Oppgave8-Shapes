@@ -2,7 +2,7 @@ public class Circle extends Shape
 {
     //# Felter
     private double radius;
-    private static int id= 0;
+    private int id;
 
     //# Konstruktører
     public Circle() {
@@ -17,8 +17,8 @@ public class Circle extends Shape
         this.setRadius(radius);
     }
 
-    public Circle(String color, boolean filled, double radius) {
-        super(color, filled);
+    public Circle(String color, boolean filled, double radius, int id) {
+        super(color, filled, id);
 
         this.setRadius(radius);
     }

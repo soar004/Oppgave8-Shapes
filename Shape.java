@@ -3,18 +3,17 @@ public abstract class Shape {
     private String color;
     private boolean filled;
 
-    private static int id  = 0;
+    private int id;
 
     //# Konstruktører
     public Shape() {
-        this("red", true);
-
+        this("red", true,1);
     }
 
-    public Shape(String color, boolean filled) {
+    public Shape(String color, boolean filled, int id) {
         this.setColor(color);
         this.setFilled(filled);
-        id++;
+        this.setId(id);
 
     }
 
@@ -28,7 +27,7 @@ public abstract class Shape {
     }
 
     public int getId() {
-        return id;
+        return this.id;
     }
 
     //# Setter-metoder
@@ -40,8 +39,8 @@ public abstract class Shape {
         this.filled = value;
     }
 
-    public static void setId(int id) {
-
+    public void setId(int id) {
+        this.id = id;
     }
 
     //# Metoder

@@ -15,7 +15,16 @@ public class Square extends Rectangle
         this.setWidth(width);
         this.setHeight(height);
     }
-    
+
+    public Square(String color, boolean filled, double width, double height, int id) {
+        super(color, filled, width, height, id);
+
+
+
+
+    }
+
+
     //# Getter-metoder
     public double getWidth() {
 

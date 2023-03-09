@@ -1,7 +1,8 @@
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
 
     private double width;
     private double height;
+
 
     //Konstruktør
 
@@ -15,7 +16,22 @@ public class Rectangle extends Shape{
 
         this.setWidth(width);
         this.setHeight(height);
+
+
     }
+
+
+    public Rectangle(String color, boolean filled, double width, double height, int id) {
+        super(color, filled, id);
+
+        this.setWidth(width);
+        this.setHeight(height);
+
+
+    }
+
+
+
 
     //Getter-metode
     public double getWidth() {
